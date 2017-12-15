@@ -1,6 +1,6 @@
 # **Experiment with ROS**
 
-## Installation
+## 1. Installation
 
 ### Kinetic: 
 
@@ -8,15 +8,21 @@ http://wiki.ros.org/kinetic/Installation/Ubuntu
 
 ### Turtlebot:
 
-https://github.com/turtlebot/turtlebot/issues/236
-
 `ros-kinetic-turtlebot-gazebo` doesn't include the teleop package, it needs to be installed with `ros-kinetic-turtlebot`
 
-### Python:
+Gazebo and Turtlebot use `python2`. If Anaconda is installed (which usually defaults to `python3`), a conda environment should be created and used:
 
-https://answers.ros.org/question/265455/modulenotfounderror-no-module-named-re/
+```
+conda create -n ros python=2.7
+```
 
-## Data Visualization
+Activate the environment and install `catking_pkg`, `catkin_pkg`, `defusedxml`, `numpy`
+
+Otherwise ~/.bashrc needs to be editted.
+
+## 2. Data Visualization
+
+The data visualization works fine with `python3`.
 
 ### Publish data frames
 `rqt_bag`
